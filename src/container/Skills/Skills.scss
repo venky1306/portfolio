@@ -1,0 +1,42 @@
+
+
+.app__skills-title{
+    margin-left: 1rem;
+    font-size: 4rem;
+    font-weight: 300;
+    // height: 110px;
+    color: var(--black-color);
+    font-family: 'Times New Roman', Times, serif;
+
+   
+}
+
+.app__skills-content{
+    // background-color: red;
+
+    margin-top: 6rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.app__skills-content-item-img{
+    // background-color: red;
+    width: 90px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.grayscale-image {
+    filter: grayscale(100%) contrast(150%) brightness(70%);
+    transition: filter 0.5s ease-out;
+
+    &:hover {
+        filter: none;
+    }
+}
+  

@@ -1,0 +1,172 @@
+.app__about{
+    display: flex;
+    width: 100%;
+    // height: 100vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    // background-color: black;
+    // padding: 14rem 0 0 0;
+}
+
+.app__about-title{
+    // background-color: red;
+    margin-top: 12rem;
+    font-size: 10rem;
+    font-weight: 300;
+    height: 110px;
+    color: var(--black-color);
+    font-family: 'Times New Roman', Times, serif;
+
+    @media screen and (max-width: 450px){
+        visibility: hidden;
+    }
+    @media screen and (max-width: 1200px){
+        visibility: hidden;
+    }
+}
+
+.app__about-content{
+    // background-color: aquamarine;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1200px){
+        padding: 0 0 0 5rem;
+    }
+    @media screen and (max-width: 450px){
+        padding: 0 0 0 2rem;
+    }
+}
+
+.about-background{
+    display: flex;
+
+    img{
+        width: 100px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    div{
+        margin: 2rem;
+        width: 70%;
+    }
+}
+
+.about-education{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    width: 100%;
+
+}
+
+.about-education-title{
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--black-color);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.about-education-items{
+    width: 70%;
+    margin-left: 2rem;
+    // margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // background-color: aqua;
+
+}
+.about-education-item{
+    margin-top: 1rem;
+    border-top: 1px solid grey;
+    width: 100%;
+}
+
+.education-degree{
+    // background-color: aliceblue;
+    margin-top: 0.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.education-college-title{
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: var(--black-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education-degree-year{
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--black-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-interests{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    // background-color: red;
+    margin-top: 2rem;
+}
+
+.about-interests-title{
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--black-color);
+    font-family: 'Times New Roman', Times, serif;
+    // margin-bottom: 1rem;
+}
+
+.app__profiles{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.app__profile-item{
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem;
+
+    img{
+        width: 100%;
+        height: 160px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    div{
+        width: 190px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 2000px){
+        width: 370px;
+        margin: 2rem 4rem;
+
+        img{
+            height: 320px;
+        }
+    }
+        
+}
