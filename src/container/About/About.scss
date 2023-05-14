@@ -10,10 +10,11 @@
 
 .app__about-title{
     // background-color: red;
-    margin-top: 12rem;
+    margin-top: 20rem;
     font-size: 10rem;
     font-weight: 300;
     height: 110px;
+    width: 300px;
     color: var(--black-color);
     font-family: 'Times New Roman', Times, serif;
 
@@ -75,7 +76,7 @@
 }
 
 .about-education-items{
-    width: 70%;
+    width: 80%;
     margin-left: 2rem;
     // margin-top: 1rem;
     display: flex;

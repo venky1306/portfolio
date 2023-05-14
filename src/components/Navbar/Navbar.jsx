@@ -3,6 +3,7 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 import './Navbar.scss'
 import { images } from '../../constants/index'
+import resume from '../../assets/resume.pdf'
 
 function capitalizeFirst(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -24,6 +25,10 @@ const Navbar = () => {
             <a href={`#${item}`}>{capitalizeFirst(item)}</a>
           </li>
         ))}
+        <li className='app__flex p-text'>
+          <div />
+          <a href={resume} target='_'>Resume</a>
+        </li>
       </ul>
       <div className='app__navbar-menu'>
           <HiMenuAlt4 onClick={() => setToggle(!toggle)} />
@@ -40,6 +45,9 @@ const Navbar = () => {
                     <a href={`#${item}`} onClick={() => setToggle(!toggle)}>{capitalizeFirst(item)}</a>
                   </li>
                 ))}
+                <li>
+                  <a href={resume}>Resume</a>
+                </li>
               </ul>
             </motion.div>
 
