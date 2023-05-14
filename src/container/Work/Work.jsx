@@ -4,13 +4,13 @@ import './Work.scss'
 import { AppWrap } from '../../wrapper'
 
 const projects = [
-  { title: 'Twitter Account Analysis', description: 'Application used to track top twitter user account and do sentiment analysis on tweets', tools: 'React, TailwindCSS, MongoDB, Flask, Azure', github: '', website: '' },
-  { title: 'Amazon Clone', description: 'Amazon clone built using React, Redux, Firebase, Stripe', tools: 'React, Redux, Firebase, Stripe', github: '', website: '' },
-  { title: 'Sorting Visualizer', description: 'Application used to visualize different sorting algorithms', tools: 'Javascript, TailwindCSS', github: '', website: '' },
-  { title: 'GoHelp', description: 'Application used to connect workman to consumers', tools: 'React, TailwindCSS, MongoDB, Flask, Azure', github: '', website: '' },
-  { title: 'Federated Learning for High Utility Item Set Mining', description: 'Application used to do federated learning on high utility data', tools: 'Python, PyTorch, Flask', github: '', website: '' },
-  { title: 'Youtube Summarizer', description: 'Application used to summarize youtube videos', tools: 'Python, Flask, Azure', github: '', website: '' },
-  { title: 'Harris Corner Detection', description: 'Application used to detect corners in images', tools: 'Python, OpenCV', github: '', website: '' },
+  { title: 'Twitter Account Analysis', description: 'Application used to track top twitter user account and do sentiment analysis on tweets', tools: 'React, TailwindCSS, MongoDB, Flask, Azure', github: 'https://github.com/venky1306/TAA-Frontend', website: 'https://twitteraa.vercel.app/users' },
+  { title: 'Amazon Clone', description: 'Amazon clone built using React, Redux, Firebase, Stripe', tools: 'React, Redux, Firebase, Stripe', github: 'https://github.com/venky1306/amazon_clone', website: '' },
+  { title: 'Sorting Visualizer', description: 'Application used to visualize different sorting algorithms', tools: 'Javascript, TailwindCSS', github: 'https://github.com/venky1306/sorting_visualizer', website: 'https://venky1306.github.io/sorting_visualizer/' },
+  { title: 'GoHelp', description: 'Application used to connect workman to consumers', tools: 'React, TailwindCSS, MongoDB, Flask, Azure', github: 'https://github.com/venky1306/GOHELP', website: '' },
+  { title: 'Federated Learning for High Utility Item Set Mining', description: 'Application used to do federated learning on high utility data', tools: 'Python, PyTorch, Flask', github: 'https://github.com/venky1306/HighUtilityItementMining', website: '' },
+  { title: 'Youtube Summarizer', description: 'Application used to summarize youtube videos', tools: 'Python, Flask, Azure', github: 'https://github.com/venky1306/Youtube_summarizer', website: '' },
+  { title: 'Harris Corner Detection', description: 'Application used to detect corners in images', tools: 'Python, OpenCV', github: 'https://github.com/venky1306/Harris-Corner-Detection', website: 'https://medium.com/@venkateshwar13/introduction-to-harris-corner-detection-and-python-implementation-from-scratch-a9d8161bdf78' },
 ]
 
 const Work = () => {
@@ -41,7 +41,12 @@ const Work = () => {
                 <div className='app__work-projects-s2'>
                   <div className='app__work-projects-item-links'>
                     <a href={project.github} target='_blank' rel='noreferrer'> <span>Repository</span> </a>
-                    <a href={project.website} target='_blank' rel='noreferrer'> <span>Try It Out</span> </a>
+                    {project.website!=='' ? (
+                      <a href={project.website} target='_blank' rel='noreferrer'> <span>Try It Out</span> </a>
+                    ) : (
+                      <></>
+                    )
+                    }
                   </div>
                 </div>
             </motion.div>
