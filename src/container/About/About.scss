@@ -46,6 +46,8 @@
 
 .about-background{
     display: flex;
+    // background-color: red;
+    margin-left: 1rem;
 
     img{
         width: 100px;
@@ -53,8 +55,10 @@
         border-radius: 50%;
     }
     div{
-        margin: 2rem;
-        width: 70%;
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+        margin-bottom: 1rem;
+        width: 100%;
     }
 }
 

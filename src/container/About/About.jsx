@@ -40,7 +40,7 @@ const About = () => {
 
         <div className='about-background'>
           <img src={images.profile} alt='profile'/>
-          <div>Name is <b>Venkateshwar Reddy Kandula,</b> <br/>Loves coding, writing blogs, and learning new things in the field of mathematics.</div>
+          <div>Name is <br/><i>Venkateshwar Reddy Kandula,</i> <br/>Loves coding, writing blogs, and learning new things in the field of mathematics.</div>
         </div>
 
         <div className='about-education'>
